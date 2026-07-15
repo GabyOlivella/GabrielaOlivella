@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -1199,8 +1199,8 @@
 
       <div class="nav-actions">
         <div class="lang-switch" id="lang-switch" role="group" aria-label="Language">
-          <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
-          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="es" class="active" aria-pressed="true">ES</button>
         </div>
 
         <a href="#contact" class="nav-cta">
@@ -1883,7 +1883,7 @@
 
       buttons.forEach(b => b.addEventListener('click', () => setLang(b.getAttribute('data-lang'))));
 
-      let initial = 'en';
+      let initial = 'es';
       try {
         const saved = localStorage.getItem('gaby-lang');
         if (saved === 'es' || saved === 'en') initial = saved;
